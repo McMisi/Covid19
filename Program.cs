@@ -13,7 +13,7 @@ namespace covid
             int max = 0;
             while(inf.ReadCovid(out Nap nap))
             {
-                l = nap.új > 5000;
+                l = l || nap.új > 5000;
                 int s = össz(nap.lista);
                 if (s > max)
                 {
